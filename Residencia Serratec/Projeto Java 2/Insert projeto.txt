@@ -1,0 +1,96 @@
+//CATEGORIAS
+
+insert into categoria (id, nome)
+values ('1', 'Blusas');
+
+insert into categoria (id, nome)
+values ('2', 'Calcas');
+
+insert into categoria (id, nome)
+values ('3', 'Casacos');
+
+insert into categoria (id, nome)
+values ('4', 'Vestidos');
+
+
+//FUNCIONARIOS
+
+insert into funcionario(id, cpf, nome)
+values ('1', '111.111.111-11', 'Thor');
+
+insert into funcionario(id, cpf, nome)
+values ('2', '222.222.222-22', 'Tony');
+
+insert into funcionario(id, cpf, nome)
+values ('3', '333.333.333-33', 'Steven');
+
+
+//CLIENTES
+
+
+insert into cliente(id, cpf, email, endereco, nascimento, nome, telefone, usuario)
+values ('1', '444.444.444-44', 'alice@email.com', 'Lugar nenhum', '1990-06-22', 'Alice', '98812-3456', 'alice4');
+
+insert into cliente(id, cpf, email, endereco, nascimento, nome, telefone, usuario)
+values ('2', '555.555.555-55', 'daniele@email.com', 'Nenhum Lugar', '1980-09-14', 'Daniele', '98878-9101', 'daniele5');
+
+insert into cliente(id, cpf, email, endereco, nascimento, nome, telefone, usuario)
+values ('3', '666.666.666-66', 'roberta@email.com', 'Naquele Lugar', '1999-02-05', 'Roberta', '98855-5555', 'roberta6');
+
+insert into cliente(id, cpf, email, endereco, nascimento, nome, telefone, usuario)
+values ('4', '777.777.777-77', 'paloma@email.com', 'Lugar naquele', '1971-12-24', 'Paloma', '98862-5432', 'paloma7');
+
+
+//PRODUTOS
+
+insert into produto(id, descricao, estoque, fabricacao, nome, valor, categoria_id, funcionario_id)
+values ('1', 'Calca 80,4% algodao, 18% poliester e 1,6% elastano', '20', '2019-05-09', 'Calca Jeans Skinny Preta', '150', '2', '3');
+
+insert into produto(id, descricao, estoque, fabricacao, nome, valor, categoria_id, funcionario_id)
+values ('2', 'Vestido 100% Viscose, na cor vermelho e amarelo', '10', '2019-05-04', 'Vestido Longo Floral', '80', '4', '1');
+
+insert into produto(id, descricao, estoque, fabricacao, nome, valor, categoria_id, funcionario_id)
+values ('3', 'Blusa 96% Viscose e 4% Elastano', '30', '2019-05-10', 'Blusa Manga Longa', '60', '1', '2');
+
+insert into produto(id, descricao, estoque, fabricacao, nome, valor, categoria_id, funcionario_id)
+values ('4', 'Casaco 75% Algodao e 25% Poliester', '10', '2019-05-20', 'Casaco Moletom', '150', '3', '1');
+
+
+//PEDIDOS
+
+insert into pedido(id, data_pedido, cliente_id)
+values ('1', '2019-10-02', '4');
+
+insert into pedido(id, data_pedido, cliente_id)
+values ('2', '2019-10-03', '3');
+
+insert into pedido(id, data_pedido, cliente_id)
+values ('3', '2019-10-04', '2');
+
+insert into pedido(id, data_pedido, cliente_id)
+values ('4', '2019-10-06', '1');
+
+
+
+//PRODUTO_PEDIDO
+
+insert into produto_pedido(id, quantidade, valor, produto_id, pedido_id)
+values ('1', '2', '120', '3', '1');
+
+insert into produto_pedido(id, quantidade, valor, produto_id, pedido_id)
+values ('2', '3', '240', '2', '4');
+
+insert into produto_pedido(id, quantidade, valor, produto_id, pedido_id)
+values ('3', '1', '150', '4', '2');
+
+insert into produto_pedido(id, quantidade, valor, produto_id, pedido_id)
+values ('4', '2', '300', '1', '3');
+
+
+
+
+
+
+
+
+
